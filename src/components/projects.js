@@ -21,7 +21,7 @@ class Projects extends React.Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <div>
+        <div className="projects-grid">
           <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
             <CardTitle
               style={{
@@ -32,6 +32,59 @@ class Projects extends React.Component {
               }}
             >
               React Project #1
+            </CardTitle>
+            <CardText>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It
+            </CardText>
+            <CardActions border>
+              <Button className="colored">GitHub</Button>
+              <Button className="colored">CodePen</Button>
+              <Button className="colored">Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#FFF",
+                height: "176px",
+                background:
+                  "url(https://img.stackshare.io/service/1020/OYIaJ1KK.png) center / cover"
+              }}
+            >
+              React Project #2
+            </CardTitle>
+            <CardText>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It
+            </CardText>
+            <CardActions border>
+              <Button className="colored">GitHub</Button>
+              <Button className="colored">CodePen</Button>
+              <Button className="colored">Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#FFF",
+                height: "176px",
+                background:
+                  "url(https://img.stackshare.io/service/1020/OYIaJ1KK.png) center / cover"
+              }}
+            >
+              React Project #3
             </CardTitle>
             <CardText>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -78,13 +131,11 @@ class Projects extends React.Component {
           <Tab>Test Automation</Tab>
         </Tabs>
 
-        <section className="projects-grid">
-          <Grid className="projects-grid">
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-        </section>
+        <Grid>
+          <Cell col={12}>
+            <div className="content">{this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
     );
   }
