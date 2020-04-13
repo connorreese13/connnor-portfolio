@@ -1,3 +1,12 @@
+body {
+  background-image: linear-gradient(
+    to top,
+    #c4c5c7 0%,
+    #dcdddf 52%,
+    #ebebeb 100%
+  );
+}
+
 .header-color {
   background: #000428; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -43,6 +52,11 @@
 
 .banner-text h1 {
   font-size: 65px;
+  font-weight: bold;
+  color: white;
+}
+.banner-text h2 {
+  font-size: 45px;
   font-weight: bold;
   color: white;
 }
@@ -123,3 +137,22 @@
   background: #27221f;
   color: white;
 }
+
+.about-me > img {
+  height: 280px;
+  width: 350px;
+  border-radius: 5%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  background-color: #3e3f40;
+  background-size: 85%;
+  background-position: 75%;
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  margin-left: 20px;
+}
+
+.fa {
+  padding-right: 10px;
+}
+
+/*Project secton*/

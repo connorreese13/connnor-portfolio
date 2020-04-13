@@ -15,7 +15,7 @@ import {
 
 class Projects extends React.Component {
   state = {
-    activeTab: 0
+    activeTab: 1
   };
 
   toggleCategories() {
@@ -31,7 +31,7 @@ class Projects extends React.Component {
                   "url(https://www.abc.net.au/news/image/9627246-3x2-340x227.jpg) center / cover"
               }}
             ></CardTitle>
-            <CardText>
+            <CardText style={{ height: "100px" }}>
               <strong style={{ fontSize: "1.3rem" }}>
                 Selenium & Cucumber BDD
               </strong>
@@ -60,7 +60,7 @@ class Projects extends React.Component {
                   "url(https://pbs.twimg.com/profile_images/993969044674953216/Peyxjyb2_400x400.jpg) center / cover"
               }}
             ></CardTitle>
-            <CardText>
+            <CardText style={{ height: "100px" }}>
               <strong style={{ fontSize: "1.3rem" }}>
                 Selenium & Nightwatch.js
               </strong>
@@ -93,7 +93,7 @@ class Projects extends React.Component {
                   "url(https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) center / cover"
               }}
             ></CardTitle>
-            <CardText>
+            <CardText style={{ height: "100px" }}>
               <strong style={{ fontSize: "1.3rem" }}>AirBnb Clone</strong>
               <br />
               <br />
@@ -101,12 +101,21 @@ class Projects extends React.Component {
               collections and utilizing client-side APIs and third-party
               components
             </CardText>
-            <CardActions border style={{ textAlign: "center" }}>
+            <CardActions
+              border
+              style={{ textAlign: "center", fontSize: "10px" }}
+            >
+              <a
+                href="https://github.com/connorreese13/04-airbnb-api"
+                target="_blank"
+              >
+                <Button className="colored">Server </Button>
+              </a>
               <a
                 href="https://github.com/connorreese13/04-airbnb-client"
                 target="_blank"
               >
-                <Button className="colored">GitHub</Button>
+                <Button className="colored">Client </Button>
               </a>
               <a
                 href="https://connor-airbnb-clone.herokuapp.com/"
@@ -127,17 +136,23 @@ class Projects extends React.Component {
                   "url(https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80) center / cover"
               }}
             ></CardTitle>
-            <CardText>
+            <CardText style={{ height: "100px" }}>
               <strong style={{ fontSize: "1.3rem" }}> To Do List</strong>
               <br />
               <br />A simple but elegant todo CRUD application
             </CardText>
             <CardActions border style={{ textAlign: "center" }}>
               <a
+                href="https://github.com/connorreese13/03-todo-list-api"
+                target="_blank"
+              >
+                <Button className="colored">Server </Button>
+              </a>
+              <a
                 href="https://github.com/connorreese13/03-todo-list-client"
                 target="_blank"
               >
-                <Button className="colored">GitHub</Button>
+                <Button className="colored">Client</Button>
               </a>
               <a
                 href="https://connor-reese-to-do-list-client.herokuapp.com/"
@@ -158,7 +173,7 @@ class Projects extends React.Component {
                   "url(https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) center / cover"
               }}
             ></CardTitle>
-            <CardText>
+            <CardText style={{ height: "100px" }}>
               <strong style={{ fontSize: "1.3rem" }}> Chat App</strong>
               <br />
               <br />
@@ -167,10 +182,16 @@ class Projects extends React.Component {
             </CardText>
             <CardActions border style={{ textAlign: "center" }}>
               <a
+                href="https://github.com/connorreese13/06-slack-api"
+                target="_blank"
+              >
+                <Button className="colored">Server </Button>
+              </a>
+              <a
                 href="https://github.com/connorreese13/06-slack-client"
                 target="_blank"
               >
-                <Button className="colored">GitHub</Button>
+                <Button className="colored">Client</Button>
               </a>
               <a
                 href="https://connor-slack-clone-client.herokuapp.com/"
@@ -202,7 +223,6 @@ class Projects extends React.Component {
         >
           <Tab>Test Automation</Tab>
           <Tab>React</Tab>
-          <Tab>NodeJS</Tab>
         </Tabs>
 
         <Grid>

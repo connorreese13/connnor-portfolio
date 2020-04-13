@@ -13,7 +13,8 @@ class Landing extends React.Component {
               className="avatar-img"
             />
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+              <h1>Connor Reese</h1>
+              <h2>Full Stack Engineer / QA Specialist </h2>
               <hr />
               <p>
                 HTML/CSS | Javascript | React | NodeJS | Express | MongoDB |
