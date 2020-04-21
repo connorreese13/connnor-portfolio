@@ -193,12 +193,6 @@ class Projects extends React.Component {
               >
                 <Button className="colored">Client</Button>
               </a>
-              <a
-                href="https://connor-slack-clone-client.herokuapp.com/"
-                target="_blank"
-              >
-                <Button className="colored">Live Demo</Button>
-              </a>
             </CardActions>
             <CardMenu style={{ color: "#fff" }}></CardMenu>
           </Card>
